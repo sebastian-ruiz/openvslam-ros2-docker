@@ -1,0 +1,9 @@
+version: '3'
+services:
+  ros2-dashing:
+    container_name: ros2-dashing
+    build: ./build
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./data:/data
